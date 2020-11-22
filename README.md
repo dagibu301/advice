@@ -2,7 +2,7 @@
 
 ## :star: Live Preview :star:
 
-Go to: [Pending](https://dagibu301.github.io/)
+Go to: [advice-dbg.netlify.app/](https://advice-dbg.netlify.app/)
 
 ## :space_invader: Technologies used
 This project was developed using this technologies:
