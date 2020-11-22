@@ -13,14 +13,17 @@ class App extends React.Component {
   }
 
   fetchAdvice = () => {
-    axios.get('https://api.adviceslip.com/advice')
+    const id = Math.floor( Math.random() * 217);
+    console.log(id);
+    axios.get(`https://api.adviceslip.com/advice/${id}`)
     .then(response => {
-      const { advice }  = response.data.slip;
+      const data = JSON.parse(response.data + '}');
+      const { advice }  = data.slip;
       this.setState({advice});
     })
     .catch(error => { 
       console.log(error);
-      this.setState({advice: 'There wan an error :('});
+      this.setState({advice: 'There was an error :('});
     });
   }
 
@@ -30,6 +33,9 @@ class App extends React.Component {
       <div className="app">
         <div className="card">
           <h1 className="heading">{ advice }</h1>
+          <button className="button" onClick={this.fetchAdvice}>
+              <span >Give me advice!</span>
+          </button>
         </div>
       </div>
     )
