@@ -17,7 +17,7 @@ class App extends React.Component {
     console.log(id);
     axios.get(`https://api.adviceslip.com/advice/${id}`)
     .then(response => {
-      const data = JSON.parse(`response.data${'}'}`);
+      const data = JSON.parse(response.data + "}");
       const { advice }  = data.slip;
       this.setState({advice});
     })
