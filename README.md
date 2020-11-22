@@ -1,5 +1,9 @@
 # Advice App :notebook:
 
+## :star: Live Preview :star:
+
+Go to: [Pending](https://dagibu301.github.io/)
+
 ## :space_invader: Technologies used
 This project was developed using this technologies:
 - [React](https://reactjs.org/)
@@ -8,7 +12,7 @@ This project was developed using this technologies:
 
 ## :computer: Description
 
-React application to get ramdonly advices from [Advice Slip JSON API](https://api.adviceslip.com/)
+React application to get randomly advices from [Advice Slip JSON API](https://api.adviceslip.com/)
 
 ## :memo: License
 

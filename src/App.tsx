@@ -17,7 +17,7 @@ class App extends React.Component {
     console.log(id);
     axios.get(`https://api.adviceslip.com/advice/${id}`)
     .then(response => {
-      const data = JSON.parse(response.data + '}');
+      const data = JSON.parse(`response.data${'}'}`);
       const { advice }  = data.slip;
       this.setState({advice});
     })
@@ -30,10 +30,10 @@ class App extends React.Component {
   render() {
     const { advice } = this.state;
     return (
-      <div className="app">
-        <div className="card">
-          <h1 className="heading">{ advice }</h1>
-          <button className="button" onClick={this.fetchAdvice}>
+      <div className='app'>
+        <div className='card'>
+          <h1 className='heading'>{ advice }</h1>
+          <button className='button' onClick={this.fetchAdvice}>
               <span >Give me advice!</span>
           </button>
         </div>
