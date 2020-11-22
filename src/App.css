@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   height: 582px;
+  font-family: 'Spartan', sans-serif;
 }
 
 .button {
